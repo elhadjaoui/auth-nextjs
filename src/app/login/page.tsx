@@ -33,7 +33,7 @@ const Login = () => {
       if (res.status == 200) {
         setLoading(false);
         toast.success("Login successful");
-        router.push("/");
+        router.push("/profile");
       }
     } catch (error: any) {
       console.log(error);
