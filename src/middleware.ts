@@ -12,14 +12,13 @@ export function middleware(request: NextRequest) {
     if (!isPublic && !token) {
         return NextResponse.redirect(new URL('/login', request.nextUrl));
     }
-    
-
 }
 export const config = {
     matcher: [
         '/',
         '/profile',
+        '/profile/:id*',
         '/login',
-        'signup',
+        '/signup',
     ],
 }
