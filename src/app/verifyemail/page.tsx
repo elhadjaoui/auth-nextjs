@@ -37,6 +37,7 @@ const VerifyEmail = () => {
     if (token.length > 0) {
       verifyUserEmail();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
   return (
     <div className="flex min-h-screen flex-col items-center justify-evenly p-24">
